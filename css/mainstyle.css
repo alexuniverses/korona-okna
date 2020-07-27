@@ -1,0 +1,506 @@
+body {
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav_bar {
+  margin: 0 auto;
+}
+
+.header {
+  max-height: 700px;
+  height: 100%;
+  padding-bottom: 10%;
+  background: url(./../img/bg/headerbg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.cards {
+  background: #bed7ef;
+  padding-bottom: 200px;
+}
+
+.aboutus {
+  margin-top: 0;
+  background: url(./../img/bg/windowbg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.consult_form {
+  background: url(./../img/bg/citybg.jpg) no-repeat;
+  background-size: 100%;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+.nav-item .nav-link {
+  padding: 0;
+}
+
+#navbar_logo {
+  width: 255px;
+  height: 55px;
+}
+
+.header {
+  font-family: Montserrat;
+}
+
+.header h3 {
+  padding-top: 100px;
+  font-size: 60px;
+  font-weight: 400;
+  color: #3F51B5;
+}
+
+.header h1 {
+  font-size: 160px;
+  font-weight: 900;
+  margin-top: -30px;
+  color: #3F51B5;
+}
+
+.header h4 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header button {
+  widows: 260px;
+  height: 57px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #F44336;
+  border-color: #F44336;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    font-family: Montserrat;
+  }
+  .header h3 {
+    padding-top: 10%;
+    font-size: 45px;
+    font-weight: 400;
+    color: #3F51B5;
+  }
+  .header h1 {
+    font-size: 100px;
+    font-weight: 900;
+    margin-top: -30px;
+    color: #3F51B5;
+  }
+  .header h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .header button {
+    widows: 240px;
+    height: 50px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-color: #F44336;
+    border-color: #F44336;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.cards {
+  text-align: center;
+}
+
+.aboutus__left_section {
+  margin-top: -180px;
+  padding: 50px;
+  background: #3F51B5;
+  color: white;
+}
+
+.aboutus__left_section h1 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.aboutus__right_section {
+  margin-top: -180px;
+  padding: 50px;
+  background: white;
+  color: #999999;
+}
+
+.aboutus__right_section h1 {
+  font-weight: 900;
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+
+.aboutus__right_section ul {
+  padding-top: 33px;
+  list-style: none;
+  background: url(./../img/bg/list-dots.svg) no-repeat;
+}
+
+.aboutus__right_section ul li {
+  font-family: Montserrat;
+  font-size: 16px;
+  margin-bottom: 17px;
+  padding-left: 60px;
+  color: #222222;
+  font-weight: bolder;
+}
+
+#advantages_title {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: Montserrat;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.advantages {
+  text-align: center;
+  font-family: Montserrat;
+  padding-bottom: 80px;
+}
+
+.advantages img {
+  padding-bottom: 30px;
+}
+
+.advantages h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.profiles {
+  text-align: center;
+}
+
+.profiles h1 {
+  font-family: Montserrat;
+  color: #999999;
+  font-size: 50px;
+  font-weight: 900;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.profiles__logos img {
+  border: 2px solid #cccccc;
+  border-radius: 1000px;
+  width: 150px;
+  height: 150px;
+}
+
+.profiles__logos h4 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 20px auto 50px auto;
+}
+
+.prices {
+  font-family: Montserrat;
+  text-align: center;
+}
+
+.prices h1 {
+  color: #999999;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.prices__windows {
+  text-align: center;
+}
+
+.prices__windows .col-md {
+  padding: 70px;
+  border: 1px solid grey;
+}
+
+.prices__windows .col-md h4 {
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+.prices__windows .col-md h3 {
+  font-size: 33px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.prices__windows .col-md button {
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.easybuy {
+  padding-bottom: 170px;
+  text-align: center;
+}
+
+.easybuy h1 {
+  color: #999999;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.easybuy .row {
+  padding-bottom: 50px;
+  background: url(./../img/icons/easybuy/listline.png) no-repeat 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.easybuy .row:nth-child(1, 5) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.easybuy .row:nth-child(2, 4) {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.easybuy .row:nth-child(3) {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.easybuy .col-md {
+  text-align: center;
+  display: flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#mastercall_btn {
+  width: 270px;
+  height: 55px;
+  font-size: 18px;
+  padding: 16px 32px;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #F44336;
+  border-color: #F44336;
+}
+
+.consult_form {
+  font-family: Montserrat;
+  text-align: center;
+  color: #fff;
+}
+
+.consult_form__bg {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  background: #3F51B5;
+}
+
+.consult_form__pos {
+  margin-top: -120px;
+  padding-top: 120px;
+  background: #3F51B5;
+}
+
+.consult_form h1 {
+  padding-bottom: 20px;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.consult_form h2 {
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.consult_form input {
+  border: none;
+  border-radius: 0px;
+}
+
+.consult_form button {
+  margin-top: 40px;
+  width: 250px;
+  height: 57px;
+  border: 2px solid;
+  border: none;
+  cursor: pointer;
+  color: #3363b7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 100px;
+  background: #ffffff;
+}
+
+.feedback {
+  padding-bottom: 100px;
+}
+
+.feedback h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: #999999;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.feedback img {
+  border-radius: 100px;
+}
+
+.feedback__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback__name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.feedback__region {
+  font-size: 16px;
+  color: #666666;
+}
+
+.box {
+  text-align: left;
+  border: 1px solid #e0e0e0;
+  border-bottom: 5px solid #e0e0e0;
+  width: 100%;
+  height: 250px;
+  margin: 50px auto;
+  background: #fff;
+  font-size: 16px;
+  padding: 20px;
+  font-weight: lighter;
+  color: black;
+  position: relative;
+}
+
+.sb3:before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid #e0e0e0;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #e0e0e0;
+  border-bottom: 8px solid transparent;
+  left: 19px;
+  bottom: -19px;
+}
+
+.address {
+  padding-bottom: 30px;
+}
+
+.address h1 {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 32px;
+  color: #999999;
+  font-weight: 900;
+  padding-bottom: 40px;
+}
+
+.address__form_side {
+  background: #3F51B5;
+}
+
+.address input {
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 0px;
+}
+
+.address button {
+  margin-bottom: 100px;
+  margin-top: 10px;
+  width: 250px;
+  height: 57px;
+  border: 2px solid;
+  border: none;
+  cursor: pointer;
+  color: #3363b7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 100px;
+  background: #ffffff;
+}
+
+form > h3 {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 33px;
+  color: #fff;
+}
+
+.footer {
+  color: #999999;
+  font-size: 16px;
+}
+
+.footer__number {
+  color: #222;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer__nav {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.footer__nav span:after {
+  content: "|";
+  font-size: 13px;
+}
+/*# sourceMappingURL=mainstyle.css.map */
