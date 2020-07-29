@@ -3,16 +3,17 @@ body
     font-family: Montserrat
     font-style: normal
 .container
-    max-width: 1200px
+    max-width: 1240px
     width: 100%
 .nav_bar
-    margin: 0 auto
+    nav
+        
 .header
     max-height: 700px
     height: 100%
-    padding-bottom: 10%
+    padding-bottom: 0
     background: url(./../img/bg/headerbg.jpg)
-    background-size: 100%
+    background-size: cover
     background-repeat: no-repeat
 .cards
     background: #bed7ef
@@ -30,4 +31,11 @@ body
     background-size: 100%
 .feedback
 .address
+    background: #3F51B5 no-repeat
+    background-position-y: top 50%
+    &__form
 .footer
+@media screen and ( max-width: 769px )
+    .cards
+        padding-bottom: 0px
+    

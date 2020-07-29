@@ -3,3 +3,32 @@
 #navbar_logo
     width: 255px
     height: 55px
+.nav_bar
+    &__set
+        display: flex
+        flex-direction: row
+    &__tel_set
+        display: flex
+        flex-direction: column
+    button
+        width: 200px
+        height: 37px
+        color: #f44336
+        font-size: 14px
+        font-weight: 600
+        text-decoration: none
+        border: 2px solid
+        border-radius: 100px
+    button:hover
+        color: #fff
+        background: #f44336
+        font-size: 14px
+        font-weight: 600
+        text-decoration: none
+        border: 2px solid
+        border-radius: 100px
+@media screen and ( max-width: 380px )
+    #navbar_logo
+        width: 130px
+        height: 30px
+    

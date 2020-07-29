@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mainstyle.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <title>Окна ПВХ пластиковые купить в Минске в рассрочку, цены</title>
 </head>
 
 <body>
     <header class="nav_bar">
         <div class="container">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light justify-content-center">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#"><img src="img/logos/header_logo.png" id="navbar_logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,21 +26,23 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="row navbar-nav">
-                        <a class="nav-item nav-link active" href="#">О нас</a>
-                        <a class="nav-item nav-link" href="#">Бренды окон</a>
-                        <a class="nav-item nav-link" href="#">Цены</a>
-                        <a class="nav-item nav-link" href="#">Как купить</a>
-                        <a class="nav-item nav-link" href="#">Консультация</a>
-                        <a class="nav-item nav-link" href="#">Отзывы</a>
-                        <a class="nav-item nav-link" href="#">Контакты</a>
+                        <div class="col-md-12 nav_bar__set">
+                            <a class="nav-item nav-link active" href="#">О нас</a>
+                            <a class="nav-item nav-link" href="#">Бренды окон</a>
+                            <a class="nav-item nav-link" href="#">Цены</a>
+                            <a class="nav-item nav-link" href="#">Как купить</a>
+                            <a class="nav-item nav-link" href="#">Консультация</a>
+                            <a class="nav-item nav-link" href="#">Отзывы</a>
+                            <a class="nav-item nav-link" href="#">Контакты</a>
+                        </div>
                     </div>
                     <div class="row">
-                        <div class="col-5">
+                        <div class="col-md nav_bar__tel_set">
                             <span>+375 (29) 288-14-32</span>
                             <span>+375 (29) 655-16-29</span>
                         </div>
-                        <div class="col-5">
-                            <button type="button" class="btn-primary">Перезвоните мне</button>
+                        <div class="col-md">
+                            <button type="button" class="btn">Перезвоните мне</button>
                         </div>
                     </div>
                 </div>
@@ -121,6 +125,11 @@
         <div class="container">
             <h1>Наши профили</h1>
             <div class="row profiles__logos">
+                <script>
+                    $(document).ready(function () {
+                        $(".owl-carousel").owlCarousel();
+                    });
+                </script>
                 <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
                     <h4>Brusbox, РФ</h4>
                 </div>
@@ -139,6 +148,7 @@
                 </div>
             </div>
         </div>
+
     </section>
     <section class="prices">
         <div class="container">
@@ -203,7 +213,7 @@
                                 <input type="text" class="form-control" placeholder="Имя">
                             </div>
                             <div class="col-md-5">
-                                <input type="text" class="form-control" placeholder="Телефон">
+                                <input type="text" class="form-control" placeholder="Телефон*">
                             </div>
                         </div>
                         <button type="button" class="btn">Отправить</button>
@@ -256,7 +266,7 @@
     <section class="address">
         <div class="container">
             <h1>Наш адрес</h1>
-            <div class="row">
+            <div class="row address__form">
                 <div class="col-md-4 address__form_side">
                     <form>
                         <h3>Бесплатный вызов замерщика</h3>
@@ -304,6 +314,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 </body>
 
 </html>
