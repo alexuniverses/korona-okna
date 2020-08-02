@@ -1,6 +1,12 @@
 @font-face {
     font-family: "Montserrat";  
-    src: url("../fonts/Montserrat-Medium.ttf") format("truetype"); 
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+     }
+@font-face {
+    font-family: "Roboto";  
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
     font-style: normal; 
     font-weight: normal;
      }

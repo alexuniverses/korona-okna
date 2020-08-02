@@ -16,38 +16,64 @@
 </head>
 
 <body>
-    <header class="nav_bar">
+    <header class="nav_bar fixed-top">
         <div class="container">
-            <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="img/logos/header_logo.png" id="navbar_logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="row navbar-nav">
-                        <div class="col-md-12 nav_bar__set">
-                            <a class="nav-item nav-link active" href="#">О нас</a>
-                            <a class="nav-item nav-link" href="#">Бренды окон</a>
-                            <a class="nav-item nav-link" href="#">Цены</a>
-                            <a class="nav-item nav-link" href="#">Как купить</a>
-                            <a class="nav-item nav-link" href="#">Консультация</a>
-                            <a class="nav-item nav-link" href="#">Отзывы</a>
-                            <a class="nav-item nav-link" href="#">Контакты</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md nav_bar__tel_set">
-                            <span>+375 (29) 288-14-32</span>
-                            <span>+375 (29) 655-16-29</span>
-                        </div>
-                        <div class="col-md">
-                            <button type="button" class="btn">Перезвоните мне</button>
+                    <div class="navbar-nav">
+                        <div class="nav_bar__set">
+                            <div class="row">
+                                <div class="col-md-12 nav_bar__list_set">
+                                    <a class="nav-item nav-link active" href="#">О нас</a>
+                                    <a class="nav-item nav-link" href="#">Бренды окон</a>
+                                    <a class="nav-item nav-link" href="#">Цены</a>
+                                    <a class="nav-item nav-link" href="#">Как купить</a>
+                                    <a class="nav-item nav-link" href="#">Консультация</a>
+                                    <a class="nav-item nav-link" href="#">Отзывы</a>
+                                    <a class="nav-item nav-link" href="#">Контакты</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8 nav_bar__tel_set">
+                                    <span>+375 (29) 655-16-29</span>
+                                    <span>+375 (29) 288-14-32</span>
+                                </div>
+                                <div class="col-md-4 p-3 nav_bar__btn_set">
+                                    <button type="button" class="btn" id="navbar_btn" data-toggle="modal"
+                                        data-target="#navModal">Перезвоните мне</button>
+                                    <div class="modal fade" id="navModal" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <h1>Укажите Ваши контактные данные</h1>
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="navnameform">Ваше Имя</label>
+                                                        <input type="text" class="form-control"
+                                                            id="navnameform" placeholder="Example input">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="navtelform">Телефон</label>
+                                                        <input type="text" class="form-control"
+                                                            id="navtelform" placeholder="Another input">
+                                                    </div>
+                                                </form>
+
+                                                <button type="button" class="btn" id="nav_popup_btn">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        </nav>
+            </nav>
         </div>
     </header>
     <header class="header">
@@ -124,12 +150,7 @@
     <section class="profiles">
         <div class="container">
             <h1>Наши профили</h1>
-            <div class="row profiles__logos">
-                <script>
-                    $(document).ready(function () {
-                        $(".owl-carousel").owlCarousel();
-                    });
-                </script>
+            <div class="row profiles__logos owl-carousel">
                 <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
                     <h4>Brusbox, РФ</h4>
                 </div>
@@ -153,22 +174,23 @@
     <section class="prices">
         <div class="container">
             <h1>Цена на наши окна</h1>
-            <div class="row prices__windows">
-                <div class="col-md m-4"><img class="img-fluid" src="img/icons/windows/window-ico.png">
+            <div class="row prices__windows owl-carousel">
+                <div class="col-md m-4"><img class="img-fluid" id="window_icon_set"
+                        src="img/icons/windows/window-ico.png">
                     <img class="img-fluid" src="img/icons/windows/window-1.jpg">
                     <h4>Двухстворчатое окно</h4>
                     <h3>от 210 руб</h3>
                     <button type="button" class="btn">Рассчитать</button>
                 </div>
                 <div class="col-md m-4">
-                    <img class="img-fluid" src="img/icons/windows/window-ico.png">
+                    <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
                     <img class="img-fluid" src="img/icons/windows/window-2.jpg">
                     <h4>Трехстворчатое окно</h4>
                     <h3>от 290 руб</h3>
                     <button type="button" class="btn">Рассчитать</button>
                 </div>
                 <div class="col-md m-4">
-                    <img class="img-fluid" src="img/icons/windows/window-ico.png">
+                    <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
                     <img class="img-fluid" src="img/icons/windows/window-3.jpg">
                     <h4>Балконная дверь + окно</h4>
                     <h3>от 360 руб</h3>
@@ -180,26 +202,30 @@
     <section class="easybuy">
         <div class="container">
             <h1>С нами купить окно просто:</h1>
-            <div class="row">
-                <div class="col-md"><img class="img-fluid" src="img/icons/easybuy/step-1.png">
-                    <h4>1 Консультация</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/easybuy/step-2.png">
-                    <h4>2 Замер</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/easybuy/step-3.png">
-                    <h4>3 Заключение договора</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/easybuy/step-4.png">
-                    <h4>4 Доставка</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/easybuy/step-5.png">
-                    <h4>5 Монтаж</h4>
-                </div>
-                <div class="col-md-12"><button type="button" class="btn" id="mastercall_btn">Вызвать замерцика</button>
+            <div>
+                <div class="easybuy__img-group">
+                    <div><img class="img-fluid" src="img/icons/easybuy/step-1.png">
+                        <h4>1 Консультация</h4>
+                    </div>
+                    <div><img class="img-fluid" src="img/icons/easybuy/step-2.png">
+                        <h4>2 Замер</h4>
+                    </div>
+                    <div><img class="img-fluid" src="img/icons/easybuy/step-3.png">
+                        <h4>3 Заключение договора</h4>
+                    </div>
+                    <div><img class="img-fluid" src="img/icons/easybuy/step-4.png">
+                        <h4>4 Доставка</h4>
+                    </div>
+                    <div><img class="img-fluid" src="img/icons/easybuy/step-5.png">
+                        <h4>5 Монтаж</h4>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="row">
+                <div class="col-md">
+                    <button type="button" class="btn" id="mastercall_btn">Вызвать замерщика</button>
+                </div>
+            </div>
     </section>
     <section class="consult_form">
         <div class="container">
@@ -316,6 +342,29 @@
         crossorigin="anonymous"></script>
     <script src="/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: true,
+                    loop: false
+                }
+            }
+        });
+        $('owl-carousel').toggle();
+    </script>
 </body>
 
 </html>
