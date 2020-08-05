@@ -28,14 +28,14 @@
                     <div class="navbar-nav">
                         <div class="nav_bar__set">
                             <div class="row">
-                                <div class="col-md-12 nav_bar__list_set">
-                                    <a class="nav-item nav-link active" href="#">О нас</a>
-                                    <a class="nav-item nav-link" href="#">Бренды окон</a>
-                                    <a class="nav-item nav-link" href="#">Цены</a>
-                                    <a class="nav-item nav-link" href="#">Как купить</a>
-                                    <a class="nav-item nav-link" href="#">Консультация</a>
-                                    <a class="nav-item nav-link" href="#">Отзывы</a>
-                                    <a class="nav-item nav-link" href="#">Контакты</a>
+                                <div class="col-md-12 nav_bar__list_set" id="menu">
+                                    <a class="nav-item nav-link" href="#about_us">О нас</a>
+                                    <a class="nav-item nav-link" href="#profiles">Бренды окон</a>
+                                    <a class="nav-item nav-link" href="#prices">Цены</a>
+                                    <a class="nav-item nav-link" href="#easybuy">Как купить</a>
+                                    <a class="nav-item nav-link" href="#consult_form">Консультация</a>
+                                    <a class="nav-item nav-link" href="#feedback">Отзывы</a>
+                                    <a class="nav-item nav-link" href="#address">Контакты</a>
                                 </div>
                             </div>
                             <div class="row">
@@ -54,13 +54,13 @@
                                                 <form>
                                                     <div class="form-group">
                                                         <label for="navnameform">Ваше Имя</label>
-                                                        <input type="text" class="form-control"
-                                                            id="navnameform" placeholder="Example input">
+                                                        <input type="text" class="form-control" id="navnameform"
+                                                            placeholder="Имя">
                                                     </div>
                                                     <div class="form-group">
                                                         <label for="navtelform">Телефон</label>
-                                                        <input type="text" class="form-control"
-                                                            id="navtelform" placeholder="Another input">
+                                                        <input type="text" class="form-control" id="navtelform"
+                                                            placeholder="+375(**) ***-**-**">
                                                     </div>
                                                 </form>
 
@@ -84,7 +84,29 @@
                     <h3>пластиковые</h3>
                     <h1>окна</h1>
                     <h4>в рассрочку до 24 месяцев</h4>
-                    <button type="button" class="btn">Вызвать замерщика</button>
+                    <button type="button" class="btn" data-toggle="modal" data-target="#navModal">Вызвать
+                        замерщика</button>
+                    <div class="modal fade" id="navModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <h1>Укажите Ваши<br>контактные данные</h1>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="navnameform">Ваше Имя</label>
+                                        <input type="text" class="form-control" id="navnameform" placeholder="Имя">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="navtelform">Телефон</label>
+                                        <input type="text" class="form-control" id="navtelform"
+                                            placeholder="+375(**) ***-**-**">
+                                    </div>
+                                </form>
+
+                                <button type="button" class="btn" id="nav_popup_btn">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,195 +120,213 @@
     </section>
     <section class="aboutus">
         <div class="container">
-            <div class="row justify-content-center aboutus__block">
-                <div class="col-md-6 aboutus__left_section">
-                    <h1>О нас</h1>
-                    <p>«Корона Окна» - компания, которая специализируется на производстве изделий из металлопластика и
-                        алюминия, а также выполняет монтаж окон, алюминиевых раздвижных систем, балконных блоков,
-                        перегородок, осуществляет отделку балкона с утеплением и крышей.</p>
-                    <p>Благодаря нам установить современные оконные, дверные системы или купить балконную раму сегодня
-                        доступно каждому.</p>
-                    <p>Наши специалисты помогут сделать оптимальный выбор оконного профиля, разработают проект оконной
-                        системы специально для вашего дома.</p>
+            <a name="about_us">
+                <div class="row justify-content-center aboutus__block">
+                    <div class="col-md-6 aboutus__left_section">
+                        <h1>О нас</h1>
+                        <p>«Корона Окна» - компания, которая специализируется на производстве изделий из металлопластика
+                            и
+                            алюминия, а также выполняет монтаж окон, алюминиевых раздвижных систем, балконных блоков,
+                            перегородок, осуществляет отделку балкона с утеплением и крышей.</p>
+                        <p>Благодаря нам установить современные оконные, дверные системы или купить балконную раму
+                            сегодня
+                            доступно каждому.</p>
+                        <p>Наши специалисты помогут сделать оптимальный выбор оконного профиля, разработают проект
+                            оконной
+                            системы специально для вашего дома.</p>
+                    </div>
+                    <div class="col-md-6 aboutus__right_section">
+                        <h1>Почему мы?</h1>
+                        <ul>
+                            <li>Собственное производство окон в Минске</li>
+                            <li>Рассрочка до 24 месяцев</li>
+                            <li>Без справок о доходах и без предоплаты</li>
+                            <li>Профессиональный монтаж под ключ</li>
+                            <li>Скидки для пенсионеров и новоселов</li>
+                            <li>Готовность окон от 3 дней</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-6 aboutus__right_section">
-                    <h1>Почему мы?</h1>
-                    <ul>
-                        <li>Собственное производство окон в Минске</li>
-                        <li>Рассрочка до 24 месяцев</li>
-                        <li>Без справок о доходах и без предоплаты</li>
-                        <li>Профессиональный монтаж под ключ</li>
-                        <li>Скидки для пенсионеров и новоселов</li>
-                        <li>Готовность окон от 3 дней</li>
-                    </ul>
+                <h1 id="advantages_title">Преимущества пластиковых окон:</h1>
+                <div class="row advantages">
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-1.png">
+                        <h3>Надёжность профиля</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-2.png">
+                        <h3>Экологичность</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-3.png">
+                        <h3>Устойчивость к морозам</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-4.png">
+                        <h3>Теплоизоляция</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-5.png">
+                        <h3>Хорошая шумоизоляция</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-6.png">
+                        <h3>Долговечность</h3>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-7.png">
+                        <h3>Пропускают больше света</h3>
+                    </div>
                 </div>
-            </div>
-            <h1 id="advantages_title">Преимущества пластиковых окон:</h1>
-            <div class="row advantages">
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-1.png">
-                    <h3>Надёжность профиля</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-2.png">
-                    <h3>Экологичность</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-3.png">
-                    <h3>Устойчивость к морозам</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-4.png">
-                    <h3>Теплоизоляция</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-5.png">
-                    <h3>Хорошая шумоизоляция</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-6.png">
-                    <h3>Долговечность</h3>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/about_us/plus-7.png">
-                    <h3>Пропускают больше света</h3>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="profiles">
         <div class="container">
-            <h1>Наши профили</h1>
-            <div class="row profiles__logos owl-carousel">
-                <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
-                    <h4>Brusbox, РФ</h4>
+            <a name="profiles">
+                <h1>Наши профили</h1>
+                <div class="row profiles__logos owl-carousel">
+                    <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
+                        <h4>Brusbox, РФ</h4>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/profiles/truby-dlya-otopleniya-rehau.jpg">
+                        <h4>Rehau, РФ</h4>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/profiles/salamander.svg">
+                        <h4>Salamander, Германия</h4>
+                    </div>
+                    <div class="col-md"><img class="img-fluid" src="img/icons/profiles/kbe-logo-150x150.jpg">
+                        <h4>KBE, Германия</h4>
+                    </div>
+                    <div class="col-md"><img class="img-fluid"
+                            src="img/icons/profiles/20180665_1416512525100496_4392438890133192704_a.jpg">
+                        <h4>Dexen, РБ</h4>
+                    </div>
                 </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/profiles/truby-dlya-otopleniya-rehau.jpg">
-                    <h4>Rehau, РФ</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/profiles/salamander.svg">
-                    <h4>Salamander, Германия</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid" src="img/icons/profiles/kbe-logo-150x150.jpg">
-                    <h4>KBE, Германия</h4>
-                </div>
-                <div class="col-md"><img class="img-fluid"
-                        src="img/icons/profiles/20180665_1416512525100496_4392438890133192704_a.jpg">
-                    <h4>Dexen, РБ</h4>
-                </div>
-            </div>
+            </a>
         </div>
 
     </section>
     <section class="prices">
         <div class="container">
-            <h1>Цена на наши окна</h1>
-            <div class="row prices__windows owl-carousel">
-                <div class="col-md m-4"><img class="img-fluid" id="window_icon_set"
-                        src="img/icons/windows/window-ico.png">
-                    <img class="img-fluid" src="img/icons/windows/window-1.jpg">
-                    <h4>Двухстворчатое окно</h4>
-                    <h3>от 210 руб</h3>
-                    <button type="button" class="btn">Рассчитать</button>
+            <a name="prices">
+                <h1>Цена на наши окна</h1>
+                <div class="row prices__windows owl-carousel">
+                    <div class="col-md m-4"><img class="img-fluid" id="window_icon_set"
+                            src="img/icons/windows/window-ico.png">
+                        <img class="img-fluid" src="img/icons/windows/window-1.jpg">
+                        <h4>Двухстворчатое окно</h4>
+                        <h3>от 210 руб</h3>
+                        <button type="button" class="btn">Рассчитать</button>
+                    </div>
+                    <div class="col-md m-4">
+                        <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
+                        <img class="img-fluid" src="img/icons/windows/window-2.jpg">
+                        <h4>Трехстворчатое окно</h4>
+                        <h3>от 290 руб</h3>
+                        <button type="button" class="btn">Рассчитать</button>
+                    </div>
+                    <div class="col-md m-4">
+                        <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
+                        <img class="img-fluid" src="img/icons/windows/window-3.jpg">
+                        <h4>Балконная дверь + окно</h4>
+                        <h3>от 360 руб</h3>
+                        <button type="button" class="btn">Рассчитать</button>
+                    </div>
                 </div>
-                <div class="col-md m-4">
-                    <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
-                    <img class="img-fluid" src="img/icons/windows/window-2.jpg">
-                    <h4>Трехстворчатое окно</h4>
-                    <h3>от 290 руб</h3>
-                    <button type="button" class="btn">Рассчитать</button>
-                </div>
-                <div class="col-md m-4">
-                    <img class="img-fluid" id="window_icon_set" src="img/icons/windows/window-ico.png">
-                    <img class="img-fluid" src="img/icons/windows/window-3.jpg">
-                    <h4>Балконная дверь + окно</h4>
-                    <h3>от 360 руб</h3>
-                    <button type="button" class="btn">Рассчитать</button>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="easybuy">
         <div class="container">
-            <h1>С нами купить окно просто:</h1>
-            <div>
-                <div class="easybuy__img-group">
-                    <div><img class="img-fluid" src="img/icons/easybuy/step-1.png">
-                        <h4>1 Консультация</h4>
-                    </div>
-                    <div><img class="img-fluid" src="img/icons/easybuy/step-2.png">
-                        <h4>2 Замер</h4>
-                    </div>
-                    <div><img class="img-fluid" src="img/icons/easybuy/step-3.png">
-                        <h4>3 Заключение договора</h4>
-                    </div>
-                    <div><img class="img-fluid" src="img/icons/easybuy/step-4.png">
-                        <h4>4 Доставка</h4>
-                    </div>
-                    <div><img class="img-fluid" src="img/icons/easybuy/step-5.png">
-                        <h4>5 Монтаж</h4>
+            <a name="easybuy">
+                <h1>С нами купить окно просто:</h1>
+                <div>
+                    <div class="easybuy__img-group">
+                        <div><img class="img-fluid" src="img/icons/easybuy/step-1.png">
+                            <h4>1 Консультация</h4>
+                        </div>
+                        <div><img class="img-fluid" src="img/icons/easybuy/step-2.png">
+                            <h4>2 Замер</h4>
+                        </div>
+                        <div><img class="img-fluid" src="img/icons/easybuy/step-3.png">
+                            <h4>3 Заключение договора</h4>
+                        </div>
+                        <div><img class="img-fluid" src="img/icons/easybuy/step-4.png">
+                            <h4>4 Доставка</h4>
+                        </div>
+                        <div><img class="img-fluid" src="img/icons/easybuy/step-5.png">
+                            <h4>5 Монтаж</h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md">
-                    <button type="button" class="btn" id="mastercall_btn">Вызвать замерщика</button>
+                <div class="row">
+                    <div class="col-md">
+                        <button type="button" class="btn" id="mastercall_btn">Вызвать замерщика</button>
+                    </div>
                 </div>
-            </div>
+            </a>
+        </div>
     </section>
     <section class="consult_form">
         <div class="container">
-            <div class="row consult_form__bg">
-                <div class="col-md-12 consult_form__pos">
-                    <h1>Бесплатная консультация</h1>
-                    <h2>Оставьте свой номер телефона, и мы вам перезвоним</h2>
-                    <form>
-                        <div class="row justify-content-center">
-                            <div class="col-md-5">
-                                <input type="text" class="form-control" placeholder="Имя">
+            <a name="consult_form">
+                <div class="row consult_form__bg">
+                    <div class="col-md-12 consult_form__pos">
+                        <h1>Бесплатная консультация</h1>
+                        <h2>Оставьте свой номер телефона, и мы вам перезвоним</h2>
+                        <form>
+                            <div class="row justify-content-center">
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" placeholder="Имя">
+                                </div>
+                                <div class="col-md-5">
+                                    <input type="text" class="form-control" placeholder="Телефон*">
+                                </div>
                             </div>
-                            <div class="col-md-5">
-                                <input type="text" class="form-control" placeholder="Телефон*">
-                            </div>
-                        </div>
-                        <button type="button" class="btn">Отправить</button>
-                    </form>
+                            <button type="button" class="btn">Отправить</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="feedback">
         <div class="container">
-            <h1>Отзывы наших клиентов</h1>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="box sb3">Работа выполнена на отлично. Окна установлены быстро и качественно. Ребята все
-                        доступно объяснили: какой материал был использован, как необходимо правильно пользоваться
-                        окнами, какой нужен уход за ними. Спасибо огромное за хорошую работу.</div>
-                    <div class="row">
-                        <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/1.jpg"></div>
-                        <div class="col-md-9 feedback__description">
-                            <span class="feedback__name">КАРАЕВА И.А.</span>
-                            <span class="feedback__region">г. Минск</span>
+            <a name="feedback">
+                <h1>Отзывы наших клиентов</h1>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="box sb3">Работа выполнена на отлично. Окна установлены быстро и качественно. Ребята
+                            все
+                            доступно объяснили: какой материал был использован, как необходимо правильно пользоваться
+                            окнами, какой нужен уход за ними. Спасибо огромное за хорошую работу.</div>
+                        <div class="row">
+                            <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/1.jpg"></div>
+                            <div class="col-md-9 feedback__description">
+                                <span class="feedback__name">КАРАЕВА И.А.</span>
+                                <span class="feedback__region">г. Минск</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box sb3">Работу произвели очень хорошо и быстро. Благодарю за выполненную
+                            качественную
+                            работу.</div>
+                        <div class="row">
+                            <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/2.jpg"></div>
+                            <div class="col-md-9 feedback__description">
+                                <span class="feedback__name">БАГДАНОВИЧ И.В.</span>
+                                <span class="feedback__region">г. Минск</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box sb3">Огромное спасибо ребятам. Знающие, грамотные, профессионалы. Одним словом
+                            Молодцы!!! Все сделано замечательно. Превзошли наши ожидания!</div>
+                        <div class="row">
+                            <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/3.jpg"></div>
+                            <div class="col-md-9 feedback__description">
+                                <span class="feedback__name">ДЫЛЕВСКАЯ Е.Ю.</span>
+                                <span class="feedback__region">г. Минск</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="box sb3">Работу произвели очень хорошо и быстро. Благодарю за выполненную качественную
-                        работу.</div>
-                    <div class="row">
-                        <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/2.jpg"></div>
-                        <div class="col-md-9 feedback__description">
-                            <span class="feedback__name">БАГДАНОВИЧ И.В.</span>
-                            <span class="feedback__region">г. Минск</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box sb3">Огромное спасибо ребятам. Знающие, грамотные, профессионалы. Одним словом
-                        Молодцы!!! Все сделано замечательно. Превзошли наши ожидания!</div>
-                    <div class="row">
-                        <div class="col-md-3"><img class="img-fluid" src="img/icons/feedback/3.jpg"></div>
-                        <div class="col-md-9 feedback__description">
-                            <span class="feedback__name">ДЫЛЕВСКАЯ Е.Ю.</span>
-                            <span class="feedback__region">г. Минск</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
     <section class="address_title">
@@ -296,25 +336,51 @@
     </section>
     <section class="address">
         <div class="container">
-            <div class="row address__form">
-                <div class="col-md-4 address__form_side">
-                    <form>
-                        <h3>Бесплатный вызов замерщика</h3>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Имя">
+            <a name="address">
+                <div class="row address__form">
+                    <div class="col-md-4 address__form_side">
+                        <form>
+                            <h3>Бесплатный вызов замерщика</h3>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Имя">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="formGroupExampleInput2"
+                                    placeholder="Телефон">
+                            </div>
+                            <button type="button" class="btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="address__map_info_block">
+                            <h1>Контакты</h1>
+                            <span>Минск, ул. Тепличная, 9</span>
+                            <span>+375 (29) 655-16-29</span>
+                            <span>+375 (29) 288-14-32</span>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Телефон">
-                        </div>
-                        <button type="button" class="btn">Отправить</button>
-                    </form>
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A713cf26c51fda23c72c14a74e80ae25c9357d1759ecd831e3241382a3a9cece6&amp;source=constructor"
+                            width="100%" height="100%" frameborder="0"></iframe>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <iframe
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A713cf26c51fda23c72c14a74e80ae25c9357d1759ecd831e3241382a3a9cece6&amp;source=constructor"
-                        width="100%" height="100%" frameborder="0"></iframe>
-                </div>
+            </a>
+        </div>
+    </section>
+    <section class="return_to_the_top">
+        <div class="container">
+            <div id="back-top">
+                <a href="#" onclick="return up()">НАВЕРХ СТРАНИЦЫ</a>
             </div>
+            <script>
+                function up() {
+                    var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+                    if (top > 0) {
+                        window.scrollBy(0, ((top + 100) / -10));
+                        t = setTimeout('up()', 20);
+                    } else clearTimeout(t);
+                    return false;
+                } 
+            </script>
         </div>
     </section>
     <footer class="footer">
@@ -348,7 +414,29 @@
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
         $('.owl-carousel').owlCarousel({
-            autoplay: false,
+            autoplay: true,
+            loop: true,
+            margin: 5,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: true
+                },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
+            }
+        });
+        $('owl-carousel').toggle();
+
+        $('.owl-carousel-2').owlCarousel({
+            autoplay: true,
             loop: true,
             margin: 10,
             responsiveClass: true,
@@ -361,9 +449,13 @@
                     items: 3,
                     nav: true
                 },
+                1000: {
+                    items: 3,
+                    nav: false
+                }
             }
         });
-        $('owl-carousel').toggle();
+        $('owl-carousel-2').toggle();
     </script>
 </body>
 

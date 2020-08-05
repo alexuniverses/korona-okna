@@ -1,5 +1,8 @@
 .address
+    position: relative
     padding-bottom: 30px
+    &__map_info_block
+        position: fixed
     &__form_side
     input
         margin-bottom: 40px
@@ -8,12 +11,13 @@
         border: 1px solid
         border-color: rgba(255, 255, 255, 0.5) !important
         background-color: rgba(255, 255, 255, 0.1)
-        color: #fff
     input:focus
         background-color: rgba(255, 255, 255, 0.1)
         color: #fff
     input::placeholder 
         color: #fff
+    input:hover
+        border-color: rgb(255, 255, 255) !important
     button
         margin-bottom: 100px
         margin-top: 10px
@@ -41,6 +45,7 @@
         box-shadow: 0 0 25px #cec1c1b6
     iframe
         padding-top: 30px
+        position: relative
 form>h3
     font-family: Montserrat-Bold
     padding-top: 100px
@@ -49,4 +54,6 @@ form>h3
     font-weight: 900
     font-size: 33px
     color: #fff
+    
+
 
