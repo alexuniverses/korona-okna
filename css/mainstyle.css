@@ -61,19 +61,6 @@ body {
   background: #3F51B5;
 }
 
-.owl-prev {
-  width: 40px;
-  height: 40px;
-  background: url(./../img/icons/carousel/chevron-left.svg);
-}
-
-.owl-next {
-  width: 40px;
-  height: 40px;
-  background: url(./../img/icons/carousel/chevron-right.svg);
-  background-size: 100%;
-}
-
 @media screen and (max-width: 769px) {
   .cards {
     padding-bottom: 0px;
@@ -473,6 +460,7 @@ body {
   .advantages {
     font-family: Montserrat;
     padding-bottom: 80px;
+    text-align: center;
   }
   .advantages .col-md {
     display: -webkit-box;
@@ -484,18 +472,21 @@ body {
             flex-direction: row;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
-            justify-content: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .advantages .col-md img {
-    width: 80px;
-    height: 100px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    width: 80px;
+    height: 100px;
     padding-bottom: 30px;
   }
   .advantages .col-md h3 {
-    padding-left: 20px;
+    margin-left: 20px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -505,6 +496,12 @@ body {
     font-size: 16px;
     color: #fff;
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .advantages .col-md h3 {
+    font-size: 13px;
   }
 }
 

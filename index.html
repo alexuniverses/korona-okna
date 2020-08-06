@@ -178,7 +178,7 @@
         <div class="container">
             <a name="profiles">
                 <h1>Наши профили</h1>
-                <div class="row profiles__logos owl-carousel">
+                <div class="row profiles__logos owl-carousel-2">
                     <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
                         <h4>Brusbox, РФ</h4>
                     </div>
@@ -376,7 +376,7 @@
                     var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
                     if (top > 0) {
                         window.scrollBy(0, ((top + 100) / -10));
-                        t = setTimeout('up()', 20);
+                        t = setTimeout('up()', 15);
                     } else clearTimeout(t);
                     return false;
                 } 
@@ -413,7 +413,7 @@
     <script src="/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
+        $('.owl-carousel-2').owlCarousel({
             autoplay: true,
             loop: true,
             margin: 5,
@@ -433,9 +433,9 @@
                 }
             }
         });
-        $('owl-carousel').toggle();
+        $('owl-carousel-2').toggle();
 
-        $('.owl-carousel-2').owlCarousel({
+        $('.owl-carousel').owlCarousel({
             autoplay: true,
             loop: true,
             margin: 10,
@@ -455,7 +455,7 @@
                 }
             }
         });
-        $('owl-carousel-2').toggle();
+        $('owl-carousel').toggle();
     </script>
 </body>
 
