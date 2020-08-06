@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/mainstyle.css">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
     <title>Окна ПВХ пластиковые купить в Минске в рассрочку, цены</title>
 </head>
 
 <body>
+    <a id="button"></a>
+
     <header class="nav_bar fixed-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -114,7 +118,11 @@
     <section class="cards">
         <div class="container">
             <div class="row">
-                <div class="col-md-12"><img class="img-fluid" src="img/bg/cards.jpg"></div>
+                <div class="col-md-12">
+                    <picture>
+                        <img class="img-fluid" src="img/bg/cards.jpg">
+                    </picture>
+                </div>
             </div>
         </div>
     </section>
@@ -178,7 +186,7 @@
         <div class="container">
             <a name="profiles">
                 <h1>Наши профили</h1>
-                <div class="row profiles__logos owl-carousel-2">
+                <div class="row profiles__logos owl-carousel">
                     <div class="col-md"><img class="img-fluid" src="img/icons/profiles/preview-logo-brusbox.png">
                         <h4>Brusbox, РФ</h4>
                     </div>
@@ -352,35 +360,12 @@
                         </form>
                     </div>
                     <div class="col-md-8">
-                        <div class="address__map_info_block">
-                            <h1>Контакты</h1>
-                            <span>Минск, ул. Тепличная, 9</span>
-                            <span>+375 (29) 655-16-29</span>
-                            <span>+375 (29) 288-14-32</span>
-                        </div>
                         <iframe
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A713cf26c51fda23c72c14a74e80ae25c9357d1759ecd831e3241382a3a9cece6&amp;source=constructor"
                             width="100%" height="100%" frameborder="0"></iframe>
                     </div>
                 </div>
             </a>
-        </div>
-    </section>
-    <section class="return_to_the_top">
-        <div class="container">
-            <div id="back-top">
-                <a href="#" onclick="return up()">НАВЕРХ СТРАНИЦЫ</a>
-            </div>
-            <script>
-                function up() {
-                    var top = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
-                    if (top > 0) {
-                        window.scrollBy(0, ((top + 100) / -10));
-                        t = setTimeout('up()', 15);
-                    } else clearTimeout(t);
-                    return false;
-                } 
-            </script>
         </div>
     </section>
     <footer class="footer">
@@ -413,28 +398,6 @@
     <script src="/OwlCarousel2-2.3.4/docs_src/assets/vendors/jquery.min.js"></script>
     <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
-        $('.owl-carousel-2').owlCarousel({
-            autoplay: true,
-            loop: true,
-            margin: 5,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: true
-                },
-                600: {
-                    items: 3,
-                    nav: true
-                },
-                1000: {
-                    items: 3,
-                    nav: false
-                }
-            }
-        });
-        $('owl-carousel-2').toggle();
-
         $('.owl-carousel').owlCarousel({
             autoplay: true,
             loop: true,
@@ -443,11 +406,11 @@
             responsive: {
                 0: {
                     items: 1,
-                    nav: true
+                    nav: false
                 },
                 600: {
                     items: 3,
-                    nav: true
+                    nav: false
                 },
                 1000: {
                     items: 3,
@@ -456,6 +419,24 @@
             }
         });
         $('owl-carousel').toggle();
+    </script>
+    <script>
+        var btn = $('#button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+
+
     </script>
 </body>
 
